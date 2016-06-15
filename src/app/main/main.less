@@ -12,7 +12,7 @@
 
 			padding-top:36%;
 			
-			.navbar_text{
+			.col-sm-6{
 				text-align:center;
 				border: solid black 1px;
 				h2{
@@ -33,13 +33,13 @@
 		padding-top:3%;
 		font-size:18px;
 
-		.text-center{
+		.col-sm-8{
 			color:black;
 			padding:2% 0;
 			line-height:1.7em;
 		}
 
-		.quote{
+		.col-sm-10{
 			color:black;
 			padding-bottom:3%;
 		}
@@ -117,26 +117,50 @@
 }	
 
 @media screen and (min-width:600px) and (max-width:1050px){
-	h2{
-	color:blue;
+
+
+	.container #navbar .col-sm-9{
+		border:solid black 1px;
+		margin-top:40%;
+		margin-right:100px;
+		width:300px;
+		font-size:10px;
+
 	}
 
-	#projets h1{
+
+	.container #projets h1{
 		padding-top:15%;
-		color:red;
 		width:50%;
 		margin-left:25%;
 
 	}
-	
-	#projets .projets-0{
-			font-size:5px;
-			background-color:blue;
-		
+
+	.container #projets .col-sm-6 p img{
+		width:90px;
+		float: left;
+		padding-top:40px;
+		height:170px;
 	}
 
+	.container #projets .col-sm-6 p{
+		font-size:19px;
+	}
+	
 
+	.container #contact h1{
+		padding-top:10%;
+		width:50%;
+		margin-left:25%;
+	}
 
+	.container #contact .email{
+		font-size:19px;
+	}
+
+	.container #contact .col-sm-6{
+		padding-top: 10px;
+	}
 }
 
 
