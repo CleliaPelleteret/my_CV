@@ -1,5 +1,6 @@
 .container{
 	width:99%;
+	color:black;
 
 	h1{
 			text-align:center;
@@ -14,11 +15,17 @@
 			padding-bottom:10%;
 			background: url(image/fond-navbar6.jpg) no-repeat ;
 			-webkit-background-size:cover;
-			color:#DB4E5B;
+			color:white;
+
+			.fondement{
+				width:100%;
+				margin-left:2px;
+				background-color:#DB4E5B;
+				opacity:0.5;
+			}
 
 			.col-sm-6{
 				text-align:center;
-				border: solid black 3px;
 
 				h2{
 				font-size:50px;
@@ -42,14 +49,12 @@
 		background-color:#DB4E5B;
 
 		.col-sm-8{
-			color:black;
 			padding:2% 0;
 			line-height:1.7em;
 			font-size:20px;
 		}
 
 		.col-sm-10{
-			color:black;
 			padding-bottom:4%;
 			font-size:21px;
 		}
@@ -58,7 +63,6 @@
 	#about_Me{
 		padding: 4% 0% 10% 1%;
 		background-color:#f4c9cd;
-
 
 		.col-sm-4{
 			height:500px;
@@ -140,11 +144,16 @@
 @media screen and (min-width:600px) and (max-width:1050px){
 
 	.container #navbar{
+
+		.fondement{
+			margin-top:2%;
+			background-color:#DA907A;
+			opacity:0.7;
+		}
+
 		.col-sm-6{
-			border:solid black 4px;
 			margin-left:27%;	
-			
-			color:#840032;
+			color:white;
 
 			h2{
 				font-size:50px;
@@ -155,11 +164,11 @@
 	}
 
 	.container #presentation{
-		background-color:#8E3557;
+		background-color:#DA907A;
 	}
 
 	.container #about_Me{
-		background-color:#e6ccd6;
+		background-color:#e8bcaf;
 		margin-top:0%;
 		margin-bottom:0%;
 
@@ -176,7 +185,7 @@
 
 
 	.container #projets{
-		background-color:#e6ccd6;
+		background-color:#e8bcaf;
 		margin-top:0%;
 
 		h1{
@@ -196,8 +205,7 @@
 	}
 	
 	.container #contact{
-		background-color:#8E3557;
-		color:black;
+		background-color:#DA907A;
 		margin-top:0%;
 
 		h1{
@@ -213,6 +221,10 @@
 
 		}
 	}
+
+	.container #footer div{
+		background-color:#0c0c0c;
+	}
 }	
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -225,15 +237,23 @@
 	}
 
 	.container #navbar{
-		
+		background: url(image/clavier8.png) no-repeat ;
+
+		.fondement{
+			margin-top:47%;
+			background-color:#9AD2CB;
+			opacity:0.8;
+			margin-left:0px;
+			
+		}
+
 		.col-xs-10{
-			margin-top:50%;
 			margin-bottom:2%;
-			color:#DB4E5B;
-			padding-top:3%;
+			color:white;
+			padding-top:10%;		
 
 			h2{
-				font-size:30px;
+				font-size:38px;
 				margin-top:0%;
 			}
 			
@@ -243,15 +263,19 @@
 		}
 	}
 
-	.container #presentation .col-xs-10{
+	.container #presentation{
+		background-color:#9AD2CB;
+
+		.col-xs-10{
 		font-size:15px;
 		padding-top:10%;
+
+		}
 	}
 
 	.container #about_Me{
 		margin-top:0%;
-		background-color:#f0b8bd;
-		margin-bottom:0%;
+		background-color:#cce8e5;
 
 		p{
 			font-size:16px;
@@ -276,8 +300,7 @@
 	}
 
 	.container #projets{
-		background-color:#f0b8bd;
-		margin-top:0%;
+		background-color:#cce8e5;
 
 		h1{
 			margin-top:0%;
@@ -285,7 +308,6 @@
 
 		.col-xs-10{
 			width:100%;
-			padding-top:7%;
 
 			p {
 				font-size:15px;
@@ -302,6 +324,7 @@
 	.container #contact{
 		padding-bottom:30px;
 		margin-top:0%;
+		background-color:#9AD2CB;
 
 			h1{
 				width:73%;
@@ -315,6 +338,7 @@
 				margin-top:4%;
 				font-size:14px;
 			}
+
 	}
 
 	.container #footer p{
