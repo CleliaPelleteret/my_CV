@@ -6,34 +6,23 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
-    var vm = this;
+  function MainController($http) {
+    var cv = this;
 
-    vm.awesomeThings = [];
-    vm.classAnimation = '';
-    vm.creationDate = 1463473404324;
-    vm.showToastr = showToastr;
+    $http.get('app/main/my_cv_data.json').then(function(response) {
+      cv.cvData = response.data;
+    });
 
-    activate();
+    cv.changeLanguage = function(language){
+      var file= 'app/main/my_cv_data.json';
 
-    function activate() {
-      getWebDevTec();
-      $timeout(function() {
-        vm.classAnimation = 'rubberBand';
-      }, 4000);
-    }
-
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
-    }
-
-    function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
-
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        awesomeThing.rank = Math.random();
+      if(language === 'en'){
+          var file= 'app/main/my_cv_data_en.json';
+      }
+      $http.get(file).then(function(response) {
+        cv.cvData = response.data;
       });
     }
+    cv.creationDate = 1463473404324;
   }
 })();

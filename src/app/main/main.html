@@ -1,137 +1,125 @@
-<html lang="fr">
-
 <div class="container">
-  <div>
-    <acme-navbar creation-date="main.creationDate"></acme-navbar>
-  </div>
 
-  <section id="navbar">
-    <div class="fondement row">
-      <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-        <div class="navbar_text">
-          <h2><strong> Clélia Pelleteret</strong></br></h2>
-          <p class="navbar_text_small">étudiante en informatique</p>
+    <section id="navbar">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                <img ng-click="main.changeLanguage('fr')" id="icon-fr" src="assets/images/icon-french.gif" alt="icon drapeau français">
+                <img ng-click="main.changeLanguage('en')" id="icon-en" src="assets/images/icon-english.jpg" alt="english flag icon">
+                <div class="navbar-text">
+                    <h1>
+                        <strong> {{ main.cvData.surname }} </strong>
+                    </h1>
+                    <span class="navbar-text-small">  
+                        {{ main.cvData.job }} 
+                    </span>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="presentation">
-    <div class="fondement row">
-      <div >
-        <p class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-        Je m'appelle <strong>Clélia Pelleteret</strong>,</br>je suis actuellement étudiante en informatique à Supinfo Montpellier.
-        J'étudie dans cette école, en vue de passer le master 2. 
-        J'aime tout ce qui est relié à l'infomatique mais aussi aux nouvelles technologies.J'aime les travaux manuelles,la lecture,comme je suis cinéphile.J'aime apprendre, utiliser mes compétences et prouver que dans un monde de garçon, on peut très bien reussir en étant une fille.</br></p>
-        <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"> 
-         « Quand je crée quelque chose, je m’attache à donner l’impression qu’il y a un être humain derrière l’interface, pas un ordinateur. »</br> <strong>— Aarron Walter</strong></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="about_Me" class="small-text">
-    <h1> Sur Moi </h1> 
-      <div class="fondement row">
-        <div class="col-sm-4 col-xs-12">
-          <div class="about_education">
-            <h2> Education </h2>
-            <p class="general"><strong>2011</strong></br>Obtention du Brevet des Collèges,</br>Collège George Brassens Lattes </p>
-            <p><strong>2012-2013</strong></br>Lycée Jean-François Champollion</p>
-            <p><strong>2013-2015</strong></br> Obtention du Baccalauréat S option Science de l'Ingénieur,</br>Lycée Jean-Mermoz</p>
-            <p><strong>2015-2020</strong></br> Première Année Supinfo en vue d'un master 2</p>
-          </div>
+    <section id="description">
+        <div class="row">
+            <span class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" ng-bind-html="main.cvData.description">
+                {{ main.cvData.description }}
+            </span>
+            <span class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" ng-bind-html="main.cvData.quote"> 
+                {{ main.cvData.quote }}
+            </span>
         </div>
+    </section>
 
-        <div class="col-sm-4 col-xs-12 ">
-          <div class="job"> 
-            <h2> Travails </h2>
-            <p class="general">Baby-sitting</p>
-            <p>Gestion locative saisonnière: accueil,remise des clés,états des lieux,gestion administrative.</p>
-            <p><strong>2011</strong></br>Stage dans un laboratoire (1 semaine)</p>
-            <p><strong>2014-2015</strong></br>Aide aux cours de judo (4 à 9ans) à l'association J.J.C.L de Lattes.</p>
-            <p><strong>Aout 2015</strong></br> Société Général Lattes</p>
-            <p><strong>Septembre à Octobre 2015</strong></br> Cerp Montpellier</p>
-            <p><strong>Janvier à Juin 2016</strong></br>Stagiaire à Tabmo</p>
-          </div>
-        </div>
+    <section id="about-me" class="small-text">
+        <h2> 
+            Presentation 
+        </h2> 
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <div class="about-education">
+                    <h3> 
+                        Scolarisation 
+                    </h3>
+                    <ul>
+                        <li class="general" ng-repeat="school in main.cvData.schoolings">
+                            <strong> {{ school.date }} </strong><br/>
+                            {{ school.degree_name }}<br/>
+                        <span class="test">{{ school.place.name }} {{ school.place.city }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       
 
-        <div class="col-sm-4 col-xs-12">
-          <div class="competence">
-            <h2> Compétences </h2>
-            <p class="general"><i class="fa fa-check" aria-hidden="true"></i> HTML</p>
-            <p><i class="fa fa-check" aria-hidden="true"></i>CSS</p>
-            <p><i class="fa fa-check" aria-hidden="true"></i>Boostrap</p>
-            <p><i class="fa fa-check" aria-hidden="true"></i>Curiosité</p>
-            <p><i class="fa fa-check" aria-hidden="true"></i>Dynamique</p>
-            <p><i class="fa fa-check" aria-hidden="true"></i>Ambitieuse</p>
-            <p><i class="fa fa-check" aria-hidden="true"></i>Espagnol</p>
-          </div> 
-        </div>
-    </div> 
-  </section>
+            <div class="col-sm-4 col-xs-12 ">
+                <div class="jobs"> 
+                    <h3> 
+                        Emplois
+                    </h3>
+                    <ul>
+                        <li ng-repeat="job in main.cvData.jobs">
+                            <strong>{{ job.date }}</strong><br/>
+                            {{ job.name }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-  <section id="projets">
-    <h1> Mes projets </h1>
-      <div class="fondement row">
-        <div class="col-sm-6 col-xs-10">
-          <p class="projets-0">
-          <img src="assets/images/bras-articulé.jpg" alt="bras articulé"></br>Fait en 2015.Le premier projet important de mon éducation, est un bras articulé pour aider les tétraplégiques.
-          Ce projet a été réalisé par groupe de 4 en classe de terminal SI (projet de fin d'année).Ce bras sert, à appuyer sur les boutons d'ascensseur, les lumières, tout ce qui est en bas pour un tétraplégique. Il simplifie sa vie quotidienne. Ce projet est composé de recherche, de mécanique, de programme, d'adptation. Il a été fait en 6 mois et construit en 3 mois.</p>
+            <div class="col-sm-4 col-xs-12">
+                <div class="skills">
+                    <h3> 
+                        Compétences 
+                    </h3>
+                    <ul>
+                        <li ng-repeat="skill in main.cvData.skills">
+                            {{ skill.name }} <img ng-src="{{ skill.icon }}" alt="icon {{ skill.name }}" >
+                        </li>
+                    </ul>
+                </div> 
+            </div>
         </div>
-        <div class="col-sm-6 col-xs-10">
-          <p class="projets-0">
-            <img src="assets/images/windows-server-2012.jpg" alt="WS2012"></br>Ce projet fait en Juin 2016, est un projet de Windows Server donné par l'école, qui a pour but de nous faire construire une infrastructure de Windows. Comme une entreprise pourrait nous le demander. Dans ce projet, nous devions, crée une indrastructure avec 3 Windows server 2012 et deux ordinateurs clients. Un server pour l'active directory, un server pour le DHCP et le deploiement, un server pour le WSUS (mise à jour automatique).Nous devions crée des utilisateurs, avec des partages de dossier speciaux,et des GPOs. Nous devions crée un deploiement avec deux profils, où des applications sont télécharger au depart(differents selon les profils).Mettre une image d'un Windows au démarrage du nouveau ordinateur. Puis faire les mises à jours automatiquement, sans que l'utilisateur ne le remarque, avec des GPOs. 
-          </p>
-        </div>
-        <div class="col-sm-6 col-xs-10 ">
-          <p class="projets-0">
-            <img src="assets/images/assembleur.png" alt="piano assembleur"></br>
-            Le projet s'appelle "Play'O'Matic", un projet de fin d'année 2016 donnée aux élèves de premiere année à Supinfo Internation University. Ce projet est une création d'un piano en assembleur.
-            Il fallait crée un piano avec 3 modes de fonctionnement. 
-            Premier mode --> "Free To Play", un mode qui permet à l'utilisateur de jouer un piano avec les touches de son clavier. 
-            Deuxième mode --> "Training", un mode où l'ordinateur joue une musique en s'arrêtant pour que l'utilisateur puisse appuyer sur la bonne touche et ainsi apprendre. 
-            Troisième mode --> "Watch Me Play", le mode où l'ordinateur joue la musique sans s'arrêter mais en montrant quel touche il joue. 
-            Quatrième mode --> option, on peut changer la couleur du fond de noter jeu.
+    </section>
 
-            C'est un piano à 8 touches du DO à DO.
-            Dans ce projet, une documentation technique à été crée ainsi qu'un oral commercial devant un jury. 
-
-          </p>
+    <section id="projects">
+        <h2> 
+            Mes projets 
+        </h2>
+        <div class="row">
+            <div class="col-sm-6 col-xs-10" ng-repeat="project in main.cvData.projects">
+                <img ng-src="{{ project.image }}" alt="{{ project.name }}"><br/>
+                <p class="text" ng-bind-html="project.description"></p>
+            </div>
         </div>
-        <div class="col-sm-6 col-xs-10">
-          <p class="projets-0">
-            <img src="assets/images/vigilante.png" alt="Vigilante"></br>
-            L'image représente mon deuxième projet de fin d'année 2016 à Supinfo International University. Il fallait "refaire" une sorte de GTA 1,appellé ici "Vigilante".On a utilisé le language Python avec Pygame pour pouvoir le reproduire. Nous étions une équipe de trois personnes.
-            Le jeu est composé de missions, comme chercher un pistolet, pouvoir prendre une voiture et l'emmener à un point B, tuer un PNJ(personnage non joueur).
-            Des voitures et des PNJs marchent ou roulent de façon aléatoire sur toute une map, crée par nous même.
-            Deux armes sont dans le jeu: les poings et le pistolet. 
-            Une musique a été rajouté sur le jeu.
-            On peut mettre notre jeu en plein écran ou enlever le son de celui-ci.
-
-            Une documentation précise à été réalisé ainsi qu'un oral commercial devant un jury. 
-          </p>
+    </section>
+    <section id="contact">
+        <h2>
+            Pour me contacter
+        </h2>
+        <div class="row">
+            <div class="col-sm-6 col-xs-11">
+                <span class="email">
+                    <i class="fa fa-envelope" aria-hidden="true">
+                    </i> 
+                    <a href="mailto:clelia.pelleteret@gmail.com">
+                        {{ main.cvData.contact.e_mail }}
+                    </a>
+                </span>
+            </div>
+            <div class="col-sm-6 col-xs-11">
+                <span class="phone">
+                    <i class="fa fa-phone" aria-hidden="true">
+                    </i>
+                    <a href="tel:+33647952904">
+                        {{ main.cvData.contact.phone }}
+                    </a>
+                </span>
+            </div>
         </div>
-      </div>
-  </section>
+    </section>
 
-  <section id="contact">
-     <h1>Pour me contacter</h1>
-      <div class="fondement row">
-        <div class="col-sm-6 col-xs-11">
-         <p class="email">
-         <i class="fa fa-envelope" aria-hidden="true"></i> clelia.pelleteret@gmail.com</p>
+    <section id="footer">
+        <div>
+            <span>
+                <i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2016 Clelia Pelleteret.Tous les droits sont réservés.
+            </span>
         </div>
-        <div class="col-sm-6 col-xs-11">
-         <p class="phone">
-           <i class="fa fa-phone" aria-hidden="true"></i>  062981981928</p>
-        </div>
-      </div>
-  </section>
-
-  <section id="footer">
-    <div>
-      <p>
-        <i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2016 Clelia Pelleteret.Tous les droits sont réservés.</p>
-    </div>
-  </section>
+    </section>
 </div>

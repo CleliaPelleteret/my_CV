@@ -1,0 +1,183 @@
+{
+	"surname": "Clelia Pelleteret",
+	"job": "étudiante en informatique",
+	"years-old": "18",
+	"description": "Je m'appelle <strong>Clélia Pelleteret</strong>,<br/>je suis actuellement étudiante en informatique à Supinfo Montpellier.J'étudie dans cette école, en vue de passer le master 2.J'aime tout ce qui est relié à l'infomatique mais aussi aux nouvelles technologies.<br/>J'aime les travaux manuelles,la lecture,comme je suis cinéphile.<br/>J'aime apprendre, utiliser mes compétences et prouver que dans un monde de garçon on peut très bien reussir en étant une fille.<br/>Je suis ambitieuse, curieuse et dynamique, à la recherche de nouveauté et de nouvelles connaissances.Je parle Espagnol (niveau A2) et Anglais(scolaire),je possède également le permis B.",
+	"quote": "« Quand je crée quelque chose,je m’attache à donner l’impression qu’il y a un être humain derrière l’interface, pas un ordinateur.» <br/>— Aarron Walter",
+	"schoolings": [{
+		"degree_name": "Brevet des Collèges",
+		"date": "Juin 2011",
+		"place": { 
+			"name": "Collège George Brassens",
+			"city": "Lattes"
+			}
+		},
+		{
+		"degree_name": "",
+		"date": "2012-2013",
+		"place": { 
+			"name": "Lycée Jean-François Champollion",
+			"city": "Lattes"
+			}
+		},
+		{
+		"degree_name": "Baccalauréat S option Science de l'Ingénieur",
+		"date": "Juin 2015",
+		"place": { 
+			"name": "Lycée Jean Mermoz",
+			"city": "Montpellier"
+			}
+		},
+		{
+		"degree_name": "Master 2",
+		"date": "2015-2020",
+		"place": { 
+			"name": "Supinfo International University",
+			"city": "Castelnau-le-Lez"
+			}
+		}
+	],
+	"jobs": [{
+		"name": "Baby-sitting",
+		"description": "",
+		"date": "2012-...",
+		"place": {
+			"name": "",
+			"city": ["Montpellier", "Lattes", "Maurin"]
+			}
+		},
+		{
+		"name": "Gestion locative saisonnière",
+		"description": "accueil,remise des clés,états des lieux,gestion administrative",
+		"date": "2013-...",
+		"place": {
+			"label": "",
+			"city": "Lattes"
+			}
+		},
+		{
+		"name": "Stage dans un laboratoire ",
+		"description": " accueil,analyse, rangement",
+		"date": "2011",
+		"place": {
+			"label": "Foucault Olivier Charles (Labo Sud)",
+			"city":"Lattes"
+			}
+		},
+		{
+		"name": "Aide aux cours de judo",
+		"description": "pour des petits de 4 à 9 ans",
+		"date": "2014-2015",
+		"place": {
+			"label": "'association J.J.C.L ",
+			"city": "Lattes"
+			}
+		},
+		{
+		"name": "Société Général",
+		"description": "emploi saisonnier: accueil, rangement,courriel/courrier",
+		"date": "Août 2015",
+		"place": {
+			"label": "Société Général",
+			"city": "Lattes"
+			}
+		},
+		{
+		"name": "CERP",
+		"description": "Grossisse répartisseur, exclusivement pour les officines",
+		"date": "Septembre/Octobre 2015",
+		"place": {
+			"label": "CERP",
+			"city": "Montpellier"
+			}
+		},
+		{
+		"name": "Tabmo",
+		"description": " Stagiaire à Tabmo Group, un jour par semaine",
+		"date": "Janvier-Juin 2016",
+		"place": {
+			"label": "Tabmo",
+			"city": "Montpellier"
+			}
+		},
+		{
+		"name": "Tabmo",
+		"description": " Stagiaire à Tabmo Group, temps complet",
+		"date": "Juillet- Octobre 2016",
+		"place": {
+			"label": "Tabmo",
+			"city": "Montpellier"
+			}
+		}
+	],
+	"skills": [{
+			"name": "HTML",
+			"icon": "assets/images/HTML.ico"
+		},
+		{ 
+			"name": "CSS",
+			"icon": "assets/images/CSS.ico"
+		},
+		{
+			"name": "Bootstrap",
+			"icon": "assets/images/bootstrap.png"
+		},
+		{
+			"name": "JavaScript",
+			"icon": "assets/images/JavaScript.png"
+		},
+		{
+			"name": "Less",
+			"icon": "assets/images/less.png"
+		}
+	],
+	"projects": [{
+		"name": "bras articulé",
+		"description": "C'est le premier projet important de mon éducation, est un bras articulé pour aider les tétraplégiques.<br/>Ce projet a été conçu par groupe de 4 en classe de terminal SI .<br/>Ce bras sert, à appuyer sur les boutons d'ascensseur, les lumières, tout ce qui est en bas pour un tétraplégique. Il simplifie sa vie quotidienne.<br/>Ce projet est composé de recherche, de mécanique, de programme, d'adptation. Il a été fait en 6 mois et construit en 3 mois.",
+		"image": "assets/images/bras-articulé.jpg",
+		"date": "2015",
+		"label": ["recherche", "mécanique","mini-controler"],
+		"place": {
+			"name": "Lycée Jean Mermoz",
+			"city": "Montpellier"
+			}
+		},
+		{
+		"name": "WS2012",
+		"description": "S'est un projet de Windows Server donné par mon école.<br/>Il a pour but de nous faire construire une infrastructure de Windows. Comme une entreprise pourrait nous le demander. Dans ce projet, nous devions, crée une indrastructure avec 3 Windows server 2012 et deux ordinateurs clients.<br/>Un server pour l'active directory, un server pour le DHCP et le deploiement, un server pour le WSUS (mise à jour automatique).<br/> Nous devions crée des utilisateurs, avec des partages de dossier speciaux,et des GPOs.<br/>Nous devions crée un deploiement avec deux profils, où des applications sont télécharger au depart(differents selon les profils).<br/> Mettre une image d'un Windows au démarrage du nouveau ordinateur.Ainsi que faire les mises à jours automatiquement, sans que l'utilisateur ne le remarque, avec des GPOs.",
+		"image": "assets/images/windows-server-2012.jpg",
+		"date": "Juin 2016",
+		"label": ["windows server"],
+		"place": {
+			"name": "Supinfo Internationnal University",
+			"city": "Castelnau-le-Lez"
+			}
+		},
+		{
+		"name": "piano assembleur",
+		"description": "Le projet s'appelle 'Play'O'Matic', donné aux élèves de premiere année.<br/>Ce projet est une création d'un piano en assembleur.Il fallait crée un piano avec 3 modes de fonctionnement.<br/>Premier mode --> 'Free To Play', un mode qui permet à l'utilisateur de jouer un piano avec les touches de son clavier.<br/>Deuxième mode --> 'Training', un mode où l'ordinateur joue une musique en s'arrêtant pour que l'utilisateur puisse appuyer sur la bonne touche et ainsi apprendre. <br/>Troisième mode --> 'Watch Me Play', le mode où l'ordinateur joue la musique sans s'arrêter mais en montrant quel touche il joue. <br/>Quatrième mode --> option, on peut changer la couleur du fond de noter jeu.<br/>C'est un piano à 8 touches du DO à DO.<br/>Dans ce projet, une documentation technique à été crée ainsi qu'un oral commercial devant un jury.",
+		"image": "assets/images/assembleur.png",
+		"date": "Janvier-Juin 2016",
+		"label": ["assembleur"],
+		"place": {
+			"name": "Supinfo Internationnal University",
+			"city":"Castelnau-le-Lez"
+			}
+		},
+		{
+		"name": "Vigilante",
+		"description": "L'image représente mon deuxième projet de fin d'année.<br/> Il fallait 'refaire' un semblable de GTA 1,appellé ici 'Vigilante'.<br/>On a utilisé le language Python avec Pygame pour pouvoir le reproduire.<br/>Nous étions une équipe de trois personnes.<br/>Le jeu est composé de missions, comme chercher un pistolet, pouvoir prendre une voiture et l'emmener à un point B, tuer un PNJ(personnage non joueur).<br/>Des voitures et des PNJs marchent ou roulent de façon aléatoire sur toute une map, crée par nous même.Deux armes sont dans le jeu: les poings et le pistolet. <br/>Une musique a été rajouté sur le jeu.<br/>On peut mettre notre jeu en plein écran ou enlever le son de celui-ci.<br/>Une documentation précise à été réalisé ainsi qu'un oral commercial devant un jury. ",
+		"image": "/assets/images/vigilante.png",
+		"date": "Janvier-Juin 2016",
+		"label": ["Python","Pygame"],
+		"place": {
+			"name": "Supinfo Internationnal University",
+			"city":"Castelnau-le-Lez"
+			}
+		}
+	],
+	"contact": {
+		"e_mail": "clelia.pelleteret@gmail.com",
+		"phone": "06-47-95-29-04"
+	}
+}

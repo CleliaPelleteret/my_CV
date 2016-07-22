@@ -1,354 +1,492 @@
 .container{
-	width:99%;
-	color:black;
+	width: 99%;
+	color: black;
 
-	h1{
-			text-align:center;
-			width:25%;
-			border-bottom:solid black 2px;
-			margin: 2% 0 3% 36%;
-		}
-
-	#navbar{
-			width:99%;
-			padding-top:38%;
-			padding-bottom:10%;
-			background: url(image/fond-navbar6.jpg) no-repeat ;
-			-webkit-background-size:cover;
-			color:white;
-
-			.fondement{
-				width:100%;
-				margin-left:2px;
-				background-color:#DB4E5B;
-				opacity:0.5;
-
-			}
-
-			.col-sm-6{
-				text-align:center;
-
-				h2{
-				font-size:50px;
-
-				}
-
-				p{
-					font-size:24px;
-				}
-			}
-
-			.navbar_text_small{
-				font-size:18px;
-			}
+	a{
+		color: black;
+		text-decoration: none;
 	}
 
-	#presentation{
-		text-align:center;
-		padding-top:3%;
-		font-size:18px;
-		background-color:#e5838c;
+	h2{
+		text-align: center;
+		font-size: 37px;
+		background-color: #DB4E5B;
+		opacity: 0.7;
+		padding: 3% 0% 2% 0%;
+		color: white;
+
+	}
+
+	#navbar{
+		padding-top: 38%;
+		padding-bottom: 10%;
+		background: url('/assets/images/fond-navbar6.jpg') no-repeat ;
+		-webkit-background-size: cover;
+		color: white;
+
+		.row{
+			margin-left: 2px;
+			background-color: #DB4E5B;
+			opacity: 0.7;
+			margin-right: 0%;
+
+			.col-sm-6{
+				text-align: center;
+				width: 100%;
+				margin-left: 0px;
+				padding-left: 29%;
+				
+				h1{
+					font-size: 60px;
+				}
+
+				#icon-fr{
+					width: 37px; 
+					margin-left: 33%;
+				}
+
+				#icon-en{
+					width: 36px;
+				}
+
+				.navbar-text-small{
+					font-size: 28px;
+				}
+			}
+		}
+
+	}
+
+	#description{
+		text-align: center;
+		padding-top: 3%;
+		font-size: 18px;
+		background-color: #e5838c;
 
 		.col-sm-8{
-			padding:2% 0;
-			line-height:1.7em;
-			font-size:24px;
+			padding: 2% 0;
+			line-height: 1.7em;
+			font-size: 24px;
 		}
 
 		.col-sm-10{
-			padding-bottom:4%;
-			font-size:21px;
+			padding-bottom:  4%;
+			font-size:  23px;
 		}
 	}
 
-	#about_Me{
+	#about-me{
 		padding: 4% 0% 10% 1%;
-		background-color:#f4c9cd;
+		background-color: #f4c9cd;
+
+		h3{
+			font-size: 30px;
+		}
+
+
+        strong{
+        	color: #8c2f58;
+            font-size: 22px;
+        }
+
+		ul{
+			padding-top: 30px;
+			margin-bottom: 20px;
+		}
+
+        .about-education{ 
+            line-height: 2em;
+
+            h3{
+                padding-left: 5%;
+            }
+
+            li{
+            	margin-right: 7%;
+            }
+        }
 
 		.col-sm-4{
-			height:500px;
-			text-align:center;
-			line-height:1.8em;
-			padding-top:3%;
+			height: 500px;
+			text-align: center;
+			padding-top: 3%;
+			font-size: 15px;
+
+			li{
+				font-size: 20px;
+				font-family: Arial;
+				list-style: none;
+			}
 		}
 
-		p{
-			font-size:21px;
-			font-family:Arial;
-		}
+        .jobs{
+            line-height: 2.3em;
+            padding-left: 3%;
 
-		.competence{
-			height:300px;
-		}
+            h3{
+            	padding-left: 5%;
+            }
+        }
 
-		h1{
-			padding-top:2%;
-		}
+		.skills{
+			height: 300px;
+			padding-right: 3%;
 
-		.general{
-			padding-top:20px;
+            ul{
+			list-style: none;
+			padding-top: 10%;
+			font-size: 25px;
+			line-height: 1.5em;
+            padding-right: 9%;
+			}
+
+			li{	
+				margin-top: 10%;
+			}
+
+			img{
+				-webkit-border-radius: 50px;    			
+				width: 60px;
+				height: 60px;
+			}
 		}
 	}
 
-	#projets{
-		padding-top:8%;
-		background-color:#f4c9cd;
+	#projects{
+		padding-top: 19%;
+		background-color: #f4c9cd;
 
 		.col-sm-6{
-			width:42%;
+			width: 42%;
 			margin: 6% 0% 7% 4%;
-	
-			p{
-				text-align:center;
-				width: 95%;
-				margin-top:5%;
-				margin-left:4%;
-				font-size:20px;
 
-				img{
-					width:300px;
-					margin-bottom:3%;
-				}	
+			p{
+			text-align: justify;
+			width: 95%;
+			margin-top: 5%;
+			margin-left: 4%;
+			font-size: 20px;
+			display: none;
 			}
+
+			img{
+
+				width: 385px;
+				height: 278px;
+				margin-bottom: 7%;
+				margin-left: 4%;
+			}
+		}
+
+		.col-sm-6:hover img {	
+			opacity: 0.4;
+		}
+
+		.col-sm-6:hover p{
+			display: block;
 		}
 	}
 
 	#contact{
-		padding-top:4%;
-		font-size:23px;
-		padding-bottom:2%;
-		background-color:#e5838c;
+		padding-top: 1%;
+		font-size: 23px;
+		padding-bottom: 5%;
+		background-color: #e5838c;
 
-			p{
-				padding-top:5%;
-				margin-left:26%;
-				margin-bottom:6%;
-			}
+		span{
+			margin-left: 26%;	
+		}
+
+		h2{
+			background-color: #e5838c;
+			padding-bottom: 5%;
+			opacity: 0.7;
+		}
 	}
 
 	#footer{
-		text-align:center;
-		font-size:16px;
+		text-align: center;
+		font-size: 16px;
 	
 		div{
-		padding-top:2%;
-		padding-bottom:1%;
-		background-color:black;
-		color:#A9A9A9;
+			padding-top: 2%;
+			padding-bottom: 1%;
+			background-color: black;
+			color: #A9A9A9;
 		}
 	}
 }	
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-@media screen and (min-width:600px) and (max-width:1050px){
+@media screen and (min-width: 600px) and (max-width: 1050px){
 
 	.container #navbar{
+		.row{
+			margin-top:  2%;
+			background-color:  #DA907A;
+			opacity:  0.7;
+			margin-right: 0%;
 
-		.fondement{
-			margin-top:2%;
-			background-color:#DA907A;
-			opacity:0.7;
-		}
+			.col-sm-6{
+				padding-left: 20%;	
+				color: white;
 
-		.col-sm-6{
-			margin-left:27%;	
-			color:white;
+				.navbar-text-small{
+					font-size: 23px;
+				}
 
-			h2{
-				font-size:50px;
-			}
+				#icon-fr{
+					margin-left: 3%;
+					width: 30px;
+				}
 
-			p{	font-size:21px;}
-		}
-	}
-
-	.container #presentation{
-		background-color:#DA907A;
-	}
-
-	.container #about_Me{
-		background-color:#e8bcaf;
-		margin-top:0%;
-		margin-bottom:0%;
-
-		div{
-			height:750px;
-			
-			padding-left:5px;
-		}
-
-		h1{
-			padding-top:10%;
-			margin-top:0%;
-		}	
-	}	
-
-
-	.container #projets{
-		background-color:#e8bcaf;
-		margin-top:0%;
-
-		h1{
-			padding-top:8%;
-			width:50%;
-			margin-left:25%;
-			margin-top:0%;
-
-		}
-
-		.col-sm-6{
-
-			p{
-				width:110%;
-				text-align:left;
-
-				img{
-					width:70%;
-					padding-top:3%;
-					padding-left:1%;
+				#icon-en{
+					width: 30px;
 				}
 			}
 		}
 	}
-	
-	.container #contact{
-		background-color:#DA907A;
-		margin-top:0%;
 
-		h1{
-			padding-top:4%;
-			width:50%;
-			margin-left:25%;
-			margin-top:0%;
+	.container #description{
+		background-color: #DA907A;
+
+		.col-sm-10{
+			margin-top: 5%;
+		}
+	}
+
+	.container #about-me{
+		background-color: #e8bcaf;
+		margin-top: 0%;
+		margin-bottom: 0%;
+
+		div{
+			height: 750px;
+		}
+
+		h2{
+			padding: 5% 0%;
+			margin-top: 3%;
+			background-color: #DA907A;
+			opacity: 0.7;
+		}
+
+		.about-education{
+			margin-left: -15%;
+
+			h3{
+				margin-left: 2%;
+			}
+		}
+
+		.jobs{
+			margin-left: -17%;
+			padding-right: 0%;
+		}	
+
+		.skills{
+			margin-left: -5%;
+		}
+
+		strong{
+			color: #8e3d02
+;
+		}
+	}	
+
+
+	.container #projects{
+		background-color: #e8bcaf;
+		margin-top: 0%;
+
+		h2{
+			padding: 5% 0%;
+			margin-top: 3%;
+			background-color: #DA907A;
+			opacity: 0.7;
 		}
 
 		.col-sm-6{
-			padding:15px 0 15px 0;
-			font-size:20px;
+			
+			p{
+			width: 110%;
+			margin-left: 0%;
+			}
+				
+			img{
+				width: 264px;
+				height: 227px;
+				padding-top: 3%;
+			}
+		}
+	}
+		
+	.container #contact{
+		background-color: #DA907A;
+		margin-top: 0%;
 
+		h2{
+			padding-top: 2%;
+			background-color: #DA907A;
+			opacity: 0.7;
+		}
+
+		.col-sm-6{
+			padding: 15px 0 15px 0;
+			font-size: 20px;
 		}
 	}
 
 	.container #footer div{
-		background-color:#0c0c0c;
+		background-color: #0c0c0c;
 	}
-}	
+}
+	
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-@media screen and (max-width:767px){
-
-	.container h1{
-		width:50%;
-		margin-left:25%;
-		font-size:28px;
-	}
+@media screen and (max-width: 767px){
 
 	.container #navbar{
-		background: url(image/clavier8.png) no-repeat ;
+		background:  url(/assets/images/clavier8.png) no-repeat ;
 
-		.fondement{
-			margin-top:47%;
-			background-color:#9AD2CB;
-			opacity:0.8;
-			margin-left:0px;
-			
-		}
+		.row{
+			margin-top: 47%;
+			background-color: #9AD2CB;
+			opacity: 0.8;
+			margin-left: 0px;
+		 
+			.col-xs-10{
+				margin-bottom: 2%;
+				padding-left: 6%;
 
-		.col-xs-10{
-			margin-bottom:2%;
-			color:white;
-			padding-top:10%;		
+				#icon-fr{
+					width: 20px;
+					margin-left: 85%;
+				}	
 
-			h2{
-				font-size:38px;
-				margin-top:0%;
-			}
-			
-			p{
-				font-size:13px;
-			}
-		}
-	}
+				#icon-en{
+					width: 20px;
+				}	
 
-	.container #presentation{
-		background-color:#9AD2CB;
-
-		.col-xs-10{
-		font-size:15px;
-		padding-top:10%;
-
-		}
-	}
-
-	.container #about_Me{
-		margin-top:0%;
-		background-color:#cce8e5;
-
-		p{
-			font-size:16px;
-		}
-
-		h2{
-			font-size:23px;
-		}
-
-		.col-xs-12{
-			margin-bottom:-10%;
-		}
-
-		.competence h2{
-			padding-top:20%;
-		}
-
-		h1{
-			padding-top:30%;
-			margin-top:0%;
-		}
-	}
-
-	.container #projets{
-		background-color:#cce8e5;
-
-		h1{
-			margin-top:0%;
-		}
-
-		.col-xs-10{
-			width:100%;
-
-			p {
-				font-size:15px;
-				margin-left:0%;
-				img {
-					margin-top:6%;
-					padding-bottom:10%;
-					width:70%;
+				h1{
+					font-size: 34px;
+					margin-top: 0%;
+					padding-top: 1%;
+				}
+				
+				.navbar-text-small{
+					font-size: 17px;
 				}
 			}
 		}
 	}
 
-	.container #contact{
-		padding-bottom:30px;
-		margin-top:0%;
-		background-color:#9AD2CB;
+	.container #description{
+		background-color: #9AD2CB;
 
-			h1{
-				width:73%;
-				margin-left:15%;
-				font-size:25px;
-				padding-top:10%;
-				margin-top:0%;
-			}
-
-			.col-xs-11{
-				margin-top:4%;
-				font-size:14px;
-			}
-
+		.col-xs-10{
+		font-size: 15px;
+		padding-top: 10%;
+		}
 	}
 
-	.container #footer p{
-		font-size:9px;
+	.container #about-me{
+		margin-top: 0%;
+		background-color: #cce8e5;
+
+		strong{
+			color: #2e5570;
+		}
+
+		h2{
+			margin-top: 12%;
+			padding: 5% 0%;
+			background-color: #9AD2CB;
+			opacity: 0.7;
+		}
+
+		.col-xs-12{
+			margin-bottom: 70%;
+            margin-right: 20%;
+
+			li{
+				font-size: 18px;
+			}
+
+            .jobs{
+	            padding-right: 17%;
+	            margin-top: 30%;
+
+	            h3{
+	            	margin-left: 9%;
+	            }
+	        }
+
+	        .about-education{
+	            padding-right: 9%;
+	            margin-top: 20%;
+
+	        }
+
+	        .skills{
+	            margin-top: 50%;
+	            margin-bottom: 0%;
+	        }
+
+			h3{
+				font-size: 23px;
+			}
+        }
+	}
+
+	.container #projects{
+		background-color: #cce8e5;
+		padding-top: 5%;
+
+		h2{
+			padding: 5% 0%;
+			background-color: #9AD2CB;
+			opacity: 0.7;
+		}
+
+		.col-xs-10{
+			width: 100%;
+
+			p{
+				font-size: 15px;
+				margin-left: 0%;
+            	padding-right: 5%;
+            }
+
+			img {
+				margin-top: 21%;
+				padding-bottom: 8%;
+				margin-left: 14%;
+				width:  216px;
+				height:  198px;
+			}
+		}
+	}
+
+	.container #contact{
+		padding-bottom: 30px;
+		margin-top: 0%;
+		background-color: #9AD2CB;
+
+		h2{
+			font-size: 25px;
+			padding: 5% 0%;
+			background-color: #9AD2CB;
+			opacity: 0.7;
+		}
+
+		.col-xs-11{
+			margin-top: 4%;
+			font-size: 14px;
+		}
+	}
+
+	.container #footer span{
+		font-size: 9px;
 	}
 }
